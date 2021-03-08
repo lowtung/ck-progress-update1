@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="Assets/Images/icon.jpg" rel="icon">
+
+  <title>CALVIN KLEIN FIND YOUR STYLE</title>
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+  <!-- desktop -->
+  <div id="desktop">
+    <div class="background">
+      <div style="padding: 0;">
+        <div class="contentcontainer" style="text-align: center;">
+          <div>
+            <img width="200px" src="Assets/Images/logo.png" alt="" style="padding: 50px 0 35px;">
+          </div>
+
+          <div>
+            <h style="font-size: 18px; font-family: KleinRegular;">Ops.. we detected you are on desktop,</h>
+            <br>
+            <h style="font-size: 18px; font-family: KleinRegular;">please scan QR code to experience on
+              mobile.</h>
+          </div>
+
+          <div>
+            <img width="220px" src="Assets/Images/QRcode.png" alt="" style="padding: 60px 20px 0;">
+          </div>
+
+          <div id="footer" style="text-align: center; width: 100%; padding-bottom: 20px;">
+            <p style="font-family: KleinLight; font-size: 14px; margin-bottom: 5px; color: #010101; bottom:0%">
+              © 2021 Calvin Klein. |
+              Powered by <a href="https://www.conten.tech/"
+                style="text-decoration: underline; color:#010101">Conten.T</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------- -->
+
+  <div id="mobile">
+    <div class="background">
+      <div>
+        <img style="height: 50%; width: 50%; margin-top: 15px;" class="center" src="Assets/Images/logo.png">
+      </div>
+
+      <p class="center" style="font-family: KleinLight; font-size: 5vw; 
+      color: #010101; text-align: center; margin-top: 10%; ">Pick the collection</p>
+
+      <div style="margin-top: 0; margin-bottom: auto;">
+        <a href="FemaleCasual/f-casual-q1.html">
+            <img style="height: 50%; width: 50%; margin-top: 2px;" class="center" src="Assets/Images/female-category/f-casual.jpg"></a>
+        <a href="FemaleInnerwear/f-innerwear-q1.html">   
+            <img style="height: 50%; width: 50%; margin-top: 10px;" class="center" src="Assets/Images/female-category/f-underwear.jpg"></a>
+      </div>
+
+
+      <div id="footer" style="text-align: center; width: 100%; padding-bottom: 20px;">
+        <p style="font-family: KleinLight; font-size: 3vw; margin-bottom: 5px; color: #010101; bottom:0%">
+          © 2021 Calvin Klein. |
+          Powered by <a href="https://www.conten.tech/" style="text-decoration: underline; color:#010101">Conten.T</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ------- -->
+
+
+
+  <script>
+    var d = document.getElementById("desktop");
+    var m = document.getElementById("mobile");
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      console.log("mobile detected");
+      d.style.display = "none";
+      m.style.display = "block";
+    } else {
+      console.log("desktop detected");
+      d.style.display = "block";
+      m.style.display = "none";
+    }
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+</body>
+
+</html>

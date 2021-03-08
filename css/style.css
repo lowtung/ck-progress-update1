@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "KleinRegular";
+    src: url("../css/font/KleinRegular.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "KleinLight";
+    src: url("../css/font/KleinLight.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "KleinBold";
+    src: url("../css/font/KleinBold.otf");
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: "AustinBold";
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html {
+    min-height: 80vh;
+    font-family: "KleinRegular";
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+
+  }
+
+  .background {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background: #ffffff;
+    /* border: 20px solid transparent; */
+    /* background-image: url("Assets/Images/bg.jpg"); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btn {
+    margin: auto;
+    background-color: white;
+    border-color: #010101;
+    border-width: 1px;
+    height: 50%;
+    width: 80%;
+    padding-top: 12px;
+    border-radius: 0%;
+    font-size: 4vw;
+    font-family: 'KleinRegular';
+    letter-spacing: 3px;
+    color: 010101;
+    text-decoration: none;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10); */
+    margin: auto;
+    display: block;
+
+  }
+
+  #footer {
+    background-color: transparent;
+    /* flex: 0 0 50px; */
+    margin-top: 75px;
+    margin: 0;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 1.5rem;
+    position:absolute;
+  }
+
+  .form {
+    background-color: white;
+    border-color: #010101;
+    border-width: 1px;
+    height: 60%;
+    width: 100%;
+    /* border: none; */
+    padding: 8px 3rem;
+    font-size: 4vw;
+    font-family: "KleinRegular";
+    text-align: center;
+    margin: auto;
+    display: block;
+
+  }
+
+  @media (max-width: 400px) {
+    .background {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+      width: 100%;
+      height: 100%;
+      background-repeat: repeat;
+      background-size: cover;
+      background: #ffffff;
+      /* border: 15px solid transparent; */
+      /* background-image: url("Assets/Images/bg.jpg"); */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+  }
